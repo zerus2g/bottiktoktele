@@ -25,6 +25,7 @@ async def download_tiktok_video(url):
         'quiet': True,
         # Fake User-Agent để tránh bị TikTok chặn IP server
         'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'cookiefile': 'cookies.txt', # Thêm dòng này để đọc cookie
     }
     try:
         loop = asyncio.get_event_loop()
